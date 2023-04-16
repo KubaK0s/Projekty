@@ -1,0 +1,11 @@
+1 Narty SportyZimowe 60.00 true
+2 DeskaSnowboardowa SportyZimowe 70.00 true
+3 KaskNarciarski SportyZimowe 25.00 true
+4 RakietaTenisowa Tenis 40.00 true
+5 RakietaPingPongowa Tenis 10.00 false
+6 Lotka Badminton 5.50 false
+7 Mlot Lekkoatletyka 40.00 true
+8 Kula Lekkoatletyka 30.00 false
+9 Oszczep Lekkoatletyka 20.00 true
+10 Dysk Lekkoatletyka 35.00 true
+11 RekawiceBokserskie SportyWalki 40.00 false

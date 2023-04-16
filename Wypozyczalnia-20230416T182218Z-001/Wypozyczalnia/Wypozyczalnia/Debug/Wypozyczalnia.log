@@ -1,0 +1,8 @@
+﻿  Wypozyczalnia.cpp
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(6,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(290,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(301,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(310,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(320,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\dell\source\Projekt\Wypozyczalnia\Wypozyczalnia\Wypozyczalnia.cpp(330,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Wypozyczalnia.vcxproj -> C:\Users\dell\source\Projekt\Wypozyczalnia\Debug\Wypozyczalnia.exe
