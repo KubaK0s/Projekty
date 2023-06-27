@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\gra\\game_textures-20230627t110443z-001\\projekt\\game\\spacecheack.ixx",
+        "ProvidedModule": "my_module",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

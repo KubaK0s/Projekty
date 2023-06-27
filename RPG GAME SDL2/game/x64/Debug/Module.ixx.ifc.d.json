@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\dell\\gra\\game_textures\\game\\module.ixx",
+        "ProvidedModule": "my_module",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": [
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\iostream",
+                "BMI": "C:\\Users\\dell\\Gra\\game_textures\\game\\x64\\Debug\\iostream_V9208C82LKABD3FK.ifc"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\fstream",
+                "BMI": "C:\\Users\\dell\\Gra\\game_textures\\game\\x64\\Debug\\fstream_6ICX30NRPBN2ZNFV.ifc"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\filesystem",
+                "BMI": "C:\\Users\\dell\\Gra\\game_textures\\game\\x64\\Debug\\filesystem_KBG0UV59R5NR45XS.ifc"
+            }
+        ]
+    }
+}

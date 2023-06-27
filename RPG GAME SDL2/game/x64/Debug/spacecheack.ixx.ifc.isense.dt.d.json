@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\gra\\game_textures-20230627t110443z-001\\projekt\\game\\spacecheack.ixx",
+        "ProvidedModule": "my_module",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": [
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\iostream",
+                "BMI": "C:\\Users\\User\\Gra\\game_textures-20230627T110443Z-001\\Projekt\\game\\x64\\Debug\\iostream_6B0F20D2B67FF47A.ifc.dt"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\fstream",
+                "BMI": "C:\\Users\\User\\Gra\\game_textures-20230627T110443Z-001\\Projekt\\game\\x64\\Debug\\fstream_DF4AEC151C05791C.ifc.dt"
+            },
+            {
+                "Header": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.34.31933\\include\\filesystem",
+                "BMI": "C:\\Users\\User\\Gra\\game_textures-20230627T110443Z-001\\Projekt\\game\\x64\\Debug\\filesystem_48D51CA2EC0D11C5.ifc.dt"
+            }
+        ]
+    }
+}
