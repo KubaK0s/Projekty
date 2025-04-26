@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9fb0c4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.matchscore.PrimaryController">
+   <left>
+      <VBox id="VB" prefHeight="400.0" prefWidth="173.0" style="-fx-background-color: #5a8dc7;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#menu" prefHeight="120.0" prefWidth="173.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="MENU" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Returning to main menu" />
+               </tooltip>
+            </Button>
+            <Button fx:id="addMatch" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#addNewMatch" prefHeight="120.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="ADD MATCH" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Takes you to add new match menu" />
+               </tooltip>
+            </Button>
+            <Button fx:id="showScore" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" onAction="#showAllScore" prefHeight="120.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="SHOW SCORE" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Show you all resault" />
+               </tooltip>
+            </Button>
+            <Button fx:id="quit" layoutX="10.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="120.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Close a program" />
+               </tooltip>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="128.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.matchscore.TableController">
+   <children>
+      <TableView fx:id="table" layoutX="29.0" layoutY="35.0" prefHeight="200.0" prefWidth="479.0">
+        <columns>
+          <TableColumn fx:id="firstTeamName" prefWidth="120.0" text="First Team" />
+          <TableColumn fx:id="firstTeamScore" prefWidth="120.0" resizable="false" text="First Score" />
+            <TableColumn fx:id="secondTeamScore" prefWidth="120.0" text="Second Score" />
+            <TableColumn fx:id="secondTeamName" prefWidth="120.0" text="Second Team" />
+        </columns>
+         <tooltip>
+            <Tooltip text="Table containing match results" />
+         </tooltip>
+      </TableView>
+      <Button fx:id="add" layoutX="29.0" layoutY="261.0" mnemonicParsing="false" onAction="#add" text="Add">
+         <tooltip>
+            <Tooltip text="Add new data" />
+         </tooltip></Button>
+      <Button fx:id="remove" layoutX="86.0" layoutY="261.0" mnemonicParsing="false" onAction="#remove" text="Delete">
+         <tooltip>
+            <Tooltip text="Delete old data" />
+         </tooltip></Button>
+      <Button fx:id="back" layoutX="456.0" layoutY="261.0" mnemonicParsing="false" onAction="#returnToMenu" text="Return">
+         <tooltip>
+            <Tooltip text="Allows you to return to the menu" />
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>

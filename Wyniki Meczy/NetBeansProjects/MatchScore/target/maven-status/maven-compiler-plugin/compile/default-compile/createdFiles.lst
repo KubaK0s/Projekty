@@ -1,0 +1,12 @@
+Model\OwnExceptions.class
+Model\MVP.class
+Model\Model.class
+com\mycompany\matchscore\PrimaryController.class
+Controller\Controller.class
+com\mycompany\matchscore\TestController.class
+View\View.class
+Model\MVP$KDRATIO.class
+com\mycompany\matchscore\App.class
+Model\Models.class
+module-info.class
+com\mycompany\matchscore\TableController.class

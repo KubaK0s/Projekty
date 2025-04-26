@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="apTest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.matchscore.TestController">
+   <children>
+      <Label layoutX="53.0" layoutY="91.0" prefHeight="31.0" prefWidth="178.0" text="First team name" />
+      <Label layoutX="53.0" layoutY="141.0" prefHeight="31.0" prefWidth="178.0" text="Second team name" />
+      <Label layoutX="53.0" layoutY="185.0" prefHeight="31.0" prefWidth="178.0" text="First team score" />
+      <Label layoutX="53.0" layoutY="233.0" prefHeight="31.0" prefWidth="178.0" text="Second team score" />
+      <TextField fx:id="firstTeamNameId" layoutX="231.0" layoutY="94.0">
+         <tooltip>
+            <Tooltip text="Enter the name of the first team" />
+         </tooltip></TextField>
+      <TextField fx:id="secondTeamNameId" layoutX="231.0" layoutY="144.0">
+         <tooltip>
+            <Tooltip text="Enter the name of the second team" />
+         </tooltip></TextField>
+      <TextField fx:id="firstTeamScoreId" layoutX="231.0" layoutY="188.0">
+         <tooltip>
+            <Tooltip text="Enter the number of points of the first team" />
+         </tooltip></TextField>
+      <TextField fx:id="secondTeamScoreId" layoutX="231.0" layoutY="236.0">
+         <tooltip>
+            <Tooltip text="Enter the number of points of the second team" />
+         </tooltip></TextField>
+      <Button fx:id="confirmButton" disable="false" layoutX="276.0" layoutY="296.0" mnemonicParsing="false" onAction="#setMatchScoreAndBackToMenu" text="Confirm">
+         <tooltip>
+            <Tooltip text="Confirm the match and return to the menu" />
+         </tooltip></Button>
+      <Text layoutX="154.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding a new match">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
