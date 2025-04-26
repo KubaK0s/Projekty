@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Katalog Output nie kończy się ukośnikiem. To wystąpienie kompilacji doda ukośnik, ponieważ jest on niezbędny, aby możliwa była poprawna ocena katalogu Output.
+  pch.cpp
+  dllmain.cpp
+     Trwa tworzenie biblioteki C:\Users\dell\Desktop\MonteCarloWORKING\MonteCarlo\bin\Debug\net8.0-windows\MonteCarloCpp.lib i obiektu C:\Users\dell\Desktop\MonteCarloWORKING\MonteCarlo\bin\Debug\net8.0-windows\MonteCarloCpp.exp
+  MonteCarloCpp.vcxproj -> C:\Users\dell\Desktop\MonteCarloWORKING\MonteCarlo\bin\Debug\net8.0-windows\MonteCarloCpp.dll
