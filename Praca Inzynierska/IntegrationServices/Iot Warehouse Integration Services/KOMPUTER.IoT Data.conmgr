@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="KOMPUTER.IoT Data"
+  DTS:DTSID="{F4F4B316-4BCA-4D38-9E5E-2C0D2561793C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=KOMPUTER;Initial Catalog=IoT Data;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Iot Warehouse Integration Services-{F4F4B316-4BCA-4D38-9E5E-2C0D2561793C}KOMPUTER.IoT Data;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,190 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db1c6cdd-2fb0-4e80-ad59-12032d8e3c80" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IoT Warehouse View</ID>
+  <Name>IoT Warehouse View</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>IoT Data</DataSourceID>
+  <Schema>
+    <xs:schema id="IoT_x0020_Warehouse_x0020_View" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="IoT_x0020_Warehouse_x0020_View" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="59472a33-55b3-4757-9d79-e1d038d2fd7b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Device" msprop:DbTableName="Device" msprop:FriendlyName="Device" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="261fbf26-33b4-4d92-bf64-d5ca1de2a65b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="device_id" msprop:FriendlyName="device_id" msprop:DbColumnName="device_id" msprop:design-time-name="b8b1ad9f-05a4-4734-9759-bdc4ae6c40d5" type="xs:int" />
+                  <xs:element name="name" msprop:FriendlyName="name" msprop:DbColumnName="name" msprop:design-time-name="5acd0835-603e-4875-9fe2-90f20efd68ed">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="type" msprop:FriendlyName="type" msprop:DbColumnName="type" msprop:design-time-name="c1e235f9-df1e-4d05-b7ba-c770b244f9a4">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ip" msprop:FriendlyName="ip" msprop:DbColumnName="ip" msprop:design-time-name="6fb43ca9-8dde-495e-aac4-10b15b1bfc6b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="mac" msprop:FriendlyName="mac" msprop:DbColumnName="mac" msprop:design-time-name="2ef1bf2c-82ad-4c51-90d8-910de47c6896" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_EnergyUsage" msprop:DbTableName="EnergyUsage" msprop:FriendlyName="EnergyUsage" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="543354e4-44b4-4f42-b890-93fc8e88ac1f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="usage_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="usage_id" msprop:DbColumnName="usage_id" msprop:design-time-name="f562c4ed-deee-46bd-a171-32cf4ca53187" type="xs:int" />
+                  <xs:element name="time_id" msprop:FriendlyName="time_id" msprop:DbColumnName="time_id" msprop:design-time-name="594a9646-5b05-4c8d-afdd-47517660a582" type="xs:int" />
+                  <xs:element name="device_id" msprop:FriendlyName="device_id" msprop:DbColumnName="device_id" msprop:design-time-name="9e0adc14-4b41-4a5c-82c5-313de1150001" type="xs:int" />
+                  <xs:element name="room_id" msprop:FriendlyName="room_id" msprop:DbColumnName="room_id" msprop:design-time-name="736ac99a-3960-4ea4-a7dc-83ffec24709e" type="xs:int" />
+                  <xs:element name="used_energy" msprop:FriendlyName="used_energy" msprop:DbColumnName="used_energy" msprop:design-time-name="cc92a1c9-a020-4301-ad20-9b0d65903539" type="xs:double" minOccurs="0" />
+                  <xs:element name="total_used_energy" msprop:FriendlyName="total_used_energy" msprop:DbColumnName="total_used_energy" msprop:design-time-name="9613fef3-58b0-4a08-bb74-c5a49b5996c1" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_House" msprop:DbTableName="House" msprop:FriendlyName="House" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="64ed0fa9-8af7-4115-a036-98d69b975b60">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="house_id" msprop:FriendlyName="house_id" msprop:DbColumnName="house_id" msprop:design-time-name="ee30b3c4-fdac-4f67-ba1f-c78e0b07c731" type="xs:int" />
+                  <xs:element name="owner" msprop:FriendlyName="owner" msprop:DbColumnName="owner" msprop:design-time-name="2ad8882d-b365-48d9-811f-bd913ecbee27">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="location" msprop:FriendlyName="location" msprop:DbColumnName="location" msprop:design-time-name="a07a21de-9c0b-4c2d-8def-8539121e5001">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="solar_power_capacity" msprop:FriendlyName="solar_power_capacity" msprop:DbColumnName="solar_power_capacity" msprop:design-time-name="107dcf32-fee8-491d-b88b-d6f47aaec25e" type="xs:double" minOccurs="0" />
+                  <xs:element name="battery_capacity" msprop:FriendlyName="battery_capacity" msprop:DbColumnName="battery_capacity" msprop:design-time-name="b1300299-53fe-4608-8265-939a438c40ff" type="xs:double" minOccurs="0" />
+                  <xs:element name="floors" msprop:FriendlyName="floors" msprop:DbColumnName="floors" msprop:design-time-name="bd7ad290-4584-48fe-af41-e42e47afa586" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rooms" msprop:DbTableName="Rooms" msprop:FriendlyName="Rooms" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3796f019-12d0-4c95-b6b9-6aa06d595c1c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="room_id" msprop:FriendlyName="room_id" msprop:DbColumnName="room_id" msprop:design-time-name="69f5cb10-0f82-4eea-af5f-c5a66580a902" type="xs:int" />
+                  <xs:element name="house_id" msprop:FriendlyName="house_id" msprop:DbColumnName="house_id" msprop:design-time-name="7715be58-a91f-4468-91ac-28cd674efe8a" type="xs:int" />
+                  <xs:element name="room_name" msprop:FriendlyName="room_name" msprop:DbColumnName="room_name" msprop:design-time-name="e86576a2-93ee-4cc1-89e4-aa25b0b07bde">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="floor" msprop:FriendlyName="floor" msprop:DbColumnName="floor" msprop:design-time-name="ac2b2c50-890b-49ab-a706-72dbd57b3f75" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TimeDimension" msprop:DbTableName="TimeDimension" msprop:FriendlyName="TimeDimension" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2110ceae-a7f2-4e3a-9eb2-3efcdd64ccfe">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="time_id" msprop:FriendlyName="time_id" msprop:DbColumnName="time_id" msprop:design-time-name="890a1dc9-ebc3-4191-98d0-ca7d46db50b2" type="xs:int" />
+                  <xs:element name="full_datetime" msprop:FriendlyName="full_datetime" msprop:DbColumnName="full_datetime" msprop:design-time-name="0cf93674-f62c-4c8b-b0a4-413eee2463bc" type="xs:dateTime" />
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="81cde35d-29bb-494d-a599-77082ae7fdeb" type="xs:int" />
+                  <xs:element name="month" msprop:FriendlyName="month" msprop:DbColumnName="month" msprop:design-time-name="f0e84fc2-3dd9-4f86-87b8-26b0286a2456" type="xs:int" />
+                  <xs:element name="day" msprop:FriendlyName="day" msprop:DbColumnName="day" msprop:design-time-name="da8c3037-cac5-4837-bea3-942c16545e8e" type="xs:int" />
+                  <xs:element name="hour" msprop:FriendlyName="hour" msprop:DbColumnName="hour" msprop:design-time-name="cea19e9c-61cb-4be0-8181-744ba6e309b1" type="xs:int" />
+                  <xs:element name="minute" msprop:FriendlyName="minute" msprop:DbColumnName="minute" msprop:design-time-name="c95e43cc-69ea-435b-8087-becb6210f48a" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Device" />
+          <xs:field xpath="device_id" />
+        </xs:unique>
+        <xs:unique name="dbo_EnergyUsage_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_EnergyUsage" />
+          <xs:field xpath="usage_id" />
+        </xs:unique>
+        <xs:unique name="dbo_House_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_House" />
+          <xs:field xpath="house_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Rooms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rooms" />
+          <xs:field xpath="room_id" />
+        </xs:unique>
+        <xs:unique name="dbo_TimeDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TimeDimension" />
+          <xs:field xpath="time_id" />
+        </xs:unique>
+        <xs:keyref name="FK_Rooms_House" refer="dbo_House_Constraint1">
+          <xs:selector xpath=".//dbo_Rooms" />
+          <xs:field xpath="house_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_EnergyUsage_Room" refer="dbo_Rooms_Constraint1">
+          <xs:selector xpath=".//dbo_EnergyUsage" />
+          <xs:field xpath="room_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_EnergyUsage_Device" refer="Constraint1">
+          <xs:selector xpath=".//dbo_EnergyUsage" />
+          <xs:field xpath="device_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_EnergyUsage_Time" refer="dbo_TimeDimension_Constraint1">
+          <xs:selector xpath=".//dbo_EnergyUsage" />
+          <xs:field xpath="time_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <IoT_x0020_Warehouse_x0020_View xmlns="" />
+  </Schema>
+</DataSourceView>
